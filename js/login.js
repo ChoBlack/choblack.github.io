@@ -10,8 +10,8 @@ function onLoginSubmit(event){
     loginform.classList.add(HIDDEN_CLASSNAME);
     const username = input.value;    
     localStorage.setItem(USERNAME_KEY, username);
-    // h1.innerText = `Hello ${username}`; 
-    // h1.classList.remove(HIDDEN_CLASSNAME);
+    h1.innerText = `Hello ${username}`; 
+    h1.classList.remove(HIDDEN_CLASSNAME);
 }
 
 function paintGreetings(username){
