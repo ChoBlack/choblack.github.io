@@ -9,22 +9,26 @@
 </head>
 <body>
     <!--login-->
-    <form id="login-form" class="hidden">
-        <input
-         type="text" placeholder="what is your name?"
-         required
-         maxlength="15";
-         >
-         <button>Log In</button>               
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
+    <login class="login">
+        <form id="login-form" class="hidden">
+            <input
+             type="text" placeholder="what is your name?"
+             required
+             maxlength="15";
+             >
+             <button>Log In</button>               
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+    </login>    
     <!--clock-->
     <h1 id="clock"></h1>
     <!--todo-->
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required/>
-    </form>
-    <ul id="todo-list"></ul>
+    <todo class="todo">
+        <form id="todo-form">
+            <input type="text" placeholder="Write your TODO Lists!" required/>
+        </form>
+        <ul id="todo-list"></ul>
+    </todo>    
 
     <script src="js\login.js"></script>
     <script src="js\clock.js"></script>
